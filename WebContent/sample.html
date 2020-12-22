@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert title here</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <style>
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        list-style: none;
+      }
+      #navbar {
+        height:40px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navlink {
+        padding: 0 5px;
+      }
+      .navleft{
+        height:100%;
+        display:flex;
+        align-items: center;
+      }
+      #topbar {
+        width: 100%;
+        display:flex;
+        justify-content: flex-start;
+      }
+      .topsearch{
+        width:300px;
+      }
+      .topmenu{
+        display:flex;
+      }
+      .topmenu > li{
+        padding:0 15px;
+      }
+
+      .items{
+        width:500px;
+        height:100%;
+        border-right: 1px solid #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <nav id="navbar">
+        <div class="navleft">
+          <div class="navlink">
+            <svg width="61" height="27" viewBox="0 0 61 27"><g fill="none" fill-rule="evenodd"><path fill="#006CFF" d="M0 .75v17.263h12.295V13.08H4.918V5.682h7.377V.75zM15.984.75v9.865H20.9V5.682h4.919V.75zM47.951.75v9.865h4.918V5.682h4.918V.75zM39.344.75v3.7h-3.688V.75h-4.918v17.263h13.524V.75h-4.918zm-3.688 12.33h3.688V9.383h-3.688v3.699z"></path><g transform="translate(47.275 12.88)"><path fill="#006CFF" d="M6.823 9.017c-1.12 0-2.028-.91-2.028-2.034 0-1.124.908-2.035 2.028-2.035s2.03.911 2.03 2.035a2.032 2.032 0 0 1-2.03 2.034m0-8.816C3.09.2.061 3.237.061 6.983c0 3.745 3.028 6.782 6.762 6.782 3.735 0 6.763-3.037 6.763-6.782C13.586 3.237 10.558.2 6.823.2"></path></g></g></svg>
+          </div>
+
+          <div class="navlink">
+            <span>프로중개사이트</span>
+          </div>
+
+          <div class="navlink">
+            <span>프로중개사이트</span>
+          </div>
+        </div>
+
+        <div class="navright">
+          <div>방찾기</div>
+        </div>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="contents">
+        <div class="items">
+          
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+  </body>
+</html>
